@@ -1,0 +1,330 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent-color
+	color: #fff
+
+html, body
+	height: 100%
+
+.h1, .h2, .h3
+	font-family: $headers-font
+	color: $headers-color
+	text-transform: uppercase
+	margin: 0
+	a
+		color: $headers-color
+
+.h2
+	width: 100%
+	padding: 60px 0 50px
+	font-size: 36px
+
+body
+	position: relative
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	color: $text-color
+	overflow-x: hidden
+	background: #fff
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.chunks
+	position: absolute
+	bottom: 0
+	display: none
+
+ul
+	margin: 0
+	padding: 0
+	li
+		list-style: none
+
+//links
+.link
+	transition: color .2s ease
+	color: $lesson-color
+	margin-right: 10px
+	svg
+		margin-right: 5px
+		vertical-align: middle
+	span
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		transition: border-color .25s ease
+		border-bottom: 1px solid transparent
+	&:hover
+		color: $accent-color
+		text-decoration: none
+		i
+			color: $accent-color
+		span
+			// border-color: $accent-color
+
+	&-svg
+		display: flex
+		align-items: center
+		width: 70px
+		svg
+			height: 18px
+			width: 32px
+			fill: $lesson-color
+			transition: fill .2s ease
+			margin-right: 5px
+	&-wdm
+		svg
+			fill: #303547
+
+	&-lavrik
+		background: url(../img/icons/lavrik.png) no-repeat
+		padding-left: 20px
+		background-size: 18px
+		background-position: left 5px
+
+.github
+	color: $github
+	i
+		fill: $github
+
+.preview
+	color: $preview-color
+	i
+		fill: $preview-color
+
+.prod
+	color: $prod-color
+	i
+		fill: $prod-color
+
+//technologies section
+.technologies
+	color: #686868
+	cursor: default
+	margin-top: 20px
+	background: #f4f4f4
+	padding: 10px 15px
+	ul
+		display: flex
+		flex-wrap: wrap
+		li
+			margin-right: 10px
+			.gulp
+				color: $gulp
+			.sass
+				color: $sass
+				text-transform: uppercase
+			.bootstrap
+				color: $bootstrap
+			.wordpress
+				color: $wordpress
+			.jquery
+				color: $jquery
+			.less
+				color: $less
+				text-transform: uppercase
+			.ajax
+				color: $ajax
+			.admin-lte
+				color: $adminLte
+				transition: color .2s ease
+				span
+					border-bottom: 1px solid transparent
+					transition: border-color .2s ease
+				&::before
+					content: '*'
+					color: $accent-color
+				&:hover
+					text-decoration: none
+					color: $accent-color
+					span
+						border-color: $accent-color
+			.asp
+				color: $asp
+				text-transform: uppercase
+			.google
+				color: $google
+			.webpack
+				color: $webpack
+			.react
+				color: $react
+			.redux
+				color: $redux
+			.saga
+				color: $saga
+			.lodash
+				color: $lodash
+			.router
+				color: $react
+			.css-keyframes
+				color: $css-keyframes
+			.css-grid
+				color: $grid
+			.vue
+				color: $vue
+			.js
+				color: $js
+
+//content
+.wrapper
+	padding-left: 5%
+
+.projects
+	display: flex
+	flex-wrap: wrap
+	.h2
+		flex-basis: 100%
+
+	.project
+		&-small
+			img
+				height: 100px
+		flex: 1 1 280px
+		max-width: 354px
+		min-width: 200px
+		margin-right: 5%
+		padding-bottom: 90px
+		display: flex
+		flex-direction: column
+		&-img
+			width: 100%
+			min-height: 284px
+			a
+				border: 2px solid #f4f4f4
+				display: block
+				position: relative
+				&::before
+					content: 'Перейти на сайт'
+					position: absolute
+					top: -2px
+					left: -2px
+					right: -2px
+					bottom: -2px
+					background: #e8e8e8
+					opacity: 0
+					transition: opacity .35s ease
+					display: flex
+					justify-content: center
+					align-items: center
+					color: $headers-color
+					font-size: 30px
+					font-weight: bold
+				&:hover
+					&::before
+						opacity: 1
+		.h3
+			padding: 25px 0 15px
+			line-height: 26px
+		p
+			padding-bottom: 30px
+			line-height: 18px
+
+		&-links
+			margin-top: auto
+			display: flex
+
+		&-afisha
+			a
+				border-color: #ff002a
+
+		&-suncity
+			a
+				border-color: #3da398
+
+		&-tbo
+			a
+				border-color: #2d84b7
+
+		&-lk
+			.project-img
+				a
+					border-color: #069f39
+					&::before
+						content: 'Перейти в репозиторий'
+		&-ml1
+			a
+				border-color: #1a1938
+
+		&-ml2
+			a
+				border-color: #3f2938
+
+		&-rjd,
+			.project-img
+				a
+					border-color: #545d5e
+					&::before
+						content: 'Перейти в репозиторий'
+
+		&-kv
+			a
+				border-color: #43aa99
+
+		&-armata
+			a
+				border-color: #334253
+
+		&-urdis
+			a
+				border-color: #21113c
+
+		&-smitler
+			a
+				border-color: #151515
+
+		&-portfolio
+			a
+				border-color: #2c2a30
+
+		&-traveler
+			a
+				border-color: #3f282f
+
+		&-rtt
+			h2
+				text-transform: uppercase
+				color: $webpack
+				font-family: $russianRail
+				font-weight: bold
+				font-size: 90px
+				line-height: 90px
+				margin: 0
+
+		&-mm
+			h2
+				text-transform: uppercase
+				color: #c52334
+				font-family: $intro
+				font-weight: bold
+				font-size: 90px
+				line-height: 90px
+				margin: 0
+
+		&-wine-mask
+			a
+				border-color: #ffc4f0
+
+
+@import "media" // Always at the end

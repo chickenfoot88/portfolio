@@ -1,0 +1,17 @@
+/node_modules/
+
+/dist/
+
+/.git/
+
+/app/css/
+
+/app/.ftpconfig
+/app/.ftpignore
+/**/_backstage
+/
+**/package-lock.json
+/
+**/Thumbs.db
+/
+**/*.DS_Store
