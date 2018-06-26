@@ -1,5 +1,5 @@
 # Мое портфолио #
-Сайт проекта: [adel-ismagilov.ru](adel-ismagilov.ru/portfolio)
+Сайт проекта: [adel-ismagilov.ru](http://adel-ismagilov.ru/portfolio)
 
 ##### В работе использовались: #####
 1. Task manager: [Gulp](https://gulpjs.com/)
